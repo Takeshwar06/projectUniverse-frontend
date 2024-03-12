@@ -8,6 +8,7 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
+import { Checkbox } from "@/components/ui/checkbox"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
@@ -34,6 +35,10 @@ export default function ProjectUpload() {
                     <div className="space-y-1">
                         <Label htmlFor="technology">Technology Used*</Label>
                         <Input id="technology" placeholder="Use ',' to separate technology (React,Node,MongoDB)" />
+                    </div>
+                    <div className="space-y-1 flex items-center">
+                        <Label className='mr-1' htmlFor="ongoing">OnGoing</Label>
+                        <Checkbox id="ongoing" />
                     </div>
                     <div className="space-y-1">
                         <Label >Project zip file </Label>

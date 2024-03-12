@@ -72,7 +72,9 @@ export default function Message() {
                         </Tabs>
                     </div>
                 </ResizablePanel>
+
                 <ResizableHandle withHandle className='bg-gray-900' />
+                
                 <ResizablePanel defaultSize={75}>
                     <div style={{ overflowY: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none' }} className='w-[100%] h-[100%] rounded-t-xl overflow-y-scroll scrollbar-hide'>
                         <div className='w-[100%] h-16 bg-orange-300 sticky top-0 flex justify-between items-center px-2 sm:px-10'>
