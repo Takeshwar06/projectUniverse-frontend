@@ -43,6 +43,26 @@ export function ContributorsDropMenu() {
             </ DropdownMenuItem>
             <Separator />
           </>
+          <>
+            < DropdownMenuItem className="px-1 h-12 w-[100%] flex items-center">
+              <Avatar>
+                <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
+              <p className="text-lg px-2">tiger</p>
+            </ DropdownMenuItem>
+            <Separator />
+          </>
+          <>
+            < DropdownMenuItem className="px-1 h-12 w-[100%] flex items-center">
+              <Avatar>
+                <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
+              <p className="text-lg px-2">tiger</p>
+            </ DropdownMenuItem>
+            <Separator />
+          </>
         </ScrollArea>
       </DropdownMenuContent>
     </DropdownMenu>

@@ -17,7 +17,7 @@ import MoreVertRoundedIcon from '@mui/icons-material/MoreVertRounded';
 
 export default function Message() {
     return (
-        <div className='w-full h-[90vh] bg-slate-200'>
+        <div className='w-full h-[90vh] '>
             <ResizablePanelGroup
                 direction="horizontal"
                 className="min-h-[100%] max-w-[100%] rounded-lg border"
@@ -44,6 +44,53 @@ export default function Message() {
                                         <p>Online</p>
                                     </div>
                                 </div>
+
+                                
+                                <div className='w-[100%] flex p-2 bg-white rounded-md items-center mb-2'>
+                                    <Avatar>
+                                        <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                                        <AvatarFallback>CN</AvatarFallback>
+                                    </Avatar>
+                                    <div className='w-[100%] flex mx-2 justify-between'>
+                                        <p>Takeshwar janghel</p>
+                                        <p>Online</p>
+                                    </div>
+                                </div>
+
+                                <div className='w-[100%] flex p-2 bg-white rounded-md items-center mb-2'>
+                                    <Avatar>
+                                        <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                                        <AvatarFallback>CN</AvatarFallback>
+                                    </Avatar>
+                                    <div className='w-[100%] flex mx-2 justify-between'>
+                                        <p>Takeshwar janghel</p>
+                                        <p>Online</p>
+                                    </div>
+                                </div>
+
+                                <div className='w-[100%] flex p-2 bg-white rounded-md items-center mb-2'>
+                                    <Avatar>
+                                        <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                                        <AvatarFallback>CN</AvatarFallback>
+                                    </Avatar>
+                                    <div className='w-[100%] flex mx-2 justify-between'>
+                                        <p>Takeshwar janghel</p>
+                                        <p>Online</p>
+                                    </div>
+                                </div>
+
+                                <div className='w-[100%] flex p-2 bg-white rounded-md items-center mb-2'>
+                                    <Avatar>
+                                        <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                                        <AvatarFallback>CN</AvatarFallback>
+                                    </Avatar>
+                                    <div className='w-[100%] flex mx-2 justify-between'>
+                                        <p>Takeshwar janghel</p>
+                                        <p>Online</p>
+                                    </div>
+                                </div>
+
+
                             </TabsContent>
                             <TabsContent value="Connected">
                                 <div className='w-[100%] flex p-2 bg-white rounded-md items-center mb-2'>
@@ -94,14 +141,33 @@ export default function Message() {
                             <div className="message_box_right w-full flex  my-2">
                                 <div className={`message bg-white px-2 py-[1px] w-fit max-w-[60%] rounded-lg rounded-tl-none`}>
                                     <p className='message_name'>
-                                        this is not good but only legent can understand
+                                        this is  good but only legent can understand
                                     </p>
                                 </div>
                             </div>
+
                             <div className="message_box_right w-full flex justify-end my-2">
                                 <div className={`message bg-orange-400 px-2 py-[1px] w-fit max-w-[60%] rounded-lg rounded-tr-none`}>
                                     <p className='message_name'>
-                                        this is not good but only legent can understand
+                                        this is  good but only legent can understand
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div className="message_box_right w-full flex  my-2">
+                                <div className={`message bg-white px-2 py-[1px] w-fit max-w-[60%] rounded-lg rounded-tl-none`}>
+                                    <p className='message_name'>
+                                        this is  good but only legent can understand
+                                    </p>
+                                </div>
+                            </div>
+
+                            
+                            <div className="message_box_right w-full flex justify-end my-2">
+                                <div className={`message bg-orange-400 px-2 py-[1px] w-fit max-w-[60%] rounded-lg rounded-tr-none`}>
+                                    <p className='message_name'>
+                                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam iure libero est.
                                     </p>
                                 </div>
                             </div>

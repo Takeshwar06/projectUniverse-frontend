@@ -117,8 +117,24 @@ export default function ProjectCode() {
             ],
         },
     ];
+    const codeText=`
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vite + React</title>
+      </head>
+      <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+      </body>
+    </html>
+    
+    `
     return (
-        <div className='bg-slate-200 w-full pt-3 px-2 lg:pt-6 lg:px-7'>
+        <div className=' w-full pt-3 px-2 lg:pt-6 lg:px-7'>
             <div className='project-info-section  w-full'>
                 <Card className='sm:w-full'>
                     <CardHeader >
@@ -235,7 +251,7 @@ export default function ProjectCode() {
 
                                         showLineNumbers={true}
                                     >
-                                        {"code"}
+                                        {codeText}
                                     </SyntaxHighlighter>
                                 </div>
                             </div>

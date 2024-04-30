@@ -6,6 +6,7 @@ import MessageIcon from '@mui/icons-material/Message';
 import Tooltip from '@mui/material/Tooltip';
 import CloseIcon from '@mui/icons-material/Close';
 import LogoutIcon from '@mui/icons-material/Logout';
+import FolderSpecialIcon from '@mui/icons-material/FolderSpecial';
 import {Link} from 'react-router-dom';
 
 
@@ -34,13 +35,13 @@ const Navbar = () => {
             {/* navbar container */}
             <nav id="navbar" className={`nav_container  flex items-center justify-between md:px-10  h-16 bg-slate-100 min-w-full `} >
                 {/* header section left part */}
-                <div className="header ml-3 flex items-center gap-3">
-                    <a to="/profile" className="menu_link p-[.1rem] flex rounded-full custom-transition bg-blue-200 shadow-md shadow-blue-200 ">
-                        <img src="" alt="user" className='w-9 h-9 rounded-full border-[1px] border-gray-400' srcSet="" />
-                    </a>
-                    <a to="/" className='user_name font-bree text-gray-800 sm:text-xl md:text-2xl hover:opacity-90 custom-transition ' >
+                <div className="header ml-3 flex cursor-pointer items-center gap-3">
+                    <Link to="/profile" className="menu_link p-[.1rem] flex rounded-full custom-transition bg-blue-200 shadow-md shadow-blue-200 ">
+                        <img src="https://res.cloudinary.com/do3fiil0d/image/upload/v1707374136/dlz7sat4yianjpmdr9bi.jpg" alt="user" className='w-9 h-9 rounded-full border-[1px] border-gray-400' srcSet="" />
+                    </Link>
+                    <Link to="/" className='user_name cursor-pointer font-bree text-gray-800 sm:text-xl md:text-2xl hover:opacity-90 custom-transition ' >
                         Takeshwar janghel
-                    </a>
+                    </Link>
                 </div>
                 {/* right part */}
                 <ul
@@ -49,7 +50,7 @@ const Navbar = () => {
 
                     {/* upload project menu link */}
                     <li>
-                        <a to="/" className=" custom-nav-link rounded-sm hover:bg-blue-100  ">
+                        <Link to="/projectupload" className=" custom-nav-link rounded-sm hover:bg-blue-100  ">
 
                             {/* we changing content when mobile size  */}
                             {
@@ -67,12 +68,30 @@ const Navbar = () => {
                                 
                             }
 
-                        </a>
+                        </Link>
                     </li>
 
                     {/* Notification menu link */}
                     <li>
-                        <a to="/notification" className="menu_link flex items-center justify-center hover:bg-blue-100  px-3 py-2  custom-transition hover:opacity-90 rounded-2xl ">
+                        <Link to="/projectcode" className="menu_link flex items-center justify-center hover:bg-blue-100  px-3 py-2  custom-transition hover:opacity-90 rounded-2xl ">
+
+                            {/* we changing content when mobile size  */}
+                            {
+                                !isMobile && (
+                                    <>
+                                        <Tooltip title="Project" arrow>
+                                            <FolderSpecialIcon className='text-blue-900'
+                                                style={{ fontSize: '1.8rem' }}
+                                            />
+                                        </Tooltip>
+                                    </>
+                                ) 
+                            }
+                        </Link>
+                    </li>
+                    {/* Notification menu link */}
+                    <li>
+                        <Link to="/notifications" className="menu_link flex items-center justify-center hover:bg-blue-100  px-3 py-2  custom-transition hover:opacity-90 rounded-2xl ">
 
                             {/* we changing content when mobile size  */}
                             {
@@ -86,29 +105,11 @@ const Navbar = () => {
                                     </>
                                 ) 
                             }
-                        </a>
-                    </li>
-                    {/* Notification menu link */}
-                    <li>
-                        <a to="/notification" className="menu_link flex items-center justify-center hover:bg-blue-100  px-3 py-2  custom-transition hover:opacity-90 rounded-2xl ">
-
-                            {/* we changing content when mobile size  */}
-                            {
-                                !isMobile && (
-                                    <>
-                                        <Tooltip title="Notification" arrow>
-                                            <NotificationsIcon className='text-blue-900'
-                                                style={{ fontSize: '1.8rem' }}
-                                            />
-                                        </Tooltip>
-                                    </>
-                                ) 
-                            }
-                        </a>
+                        </Link>
                     </li>
                     {/* Message icon menu link */}
                     <li>
-                        <a to="/message" className="menu_link flex items-center justify-center hover:bg-blue-100  px-3 py-2  custom-transition hover:opacity-90 rounded-2xl ">
+                        <Link to="/messages" className="menu_link flex items-center justify-center hover:bg-blue-100  px-3 py-2  custom-transition hover:opacity-90 rounded-2xl ">
                             {/* we changing content when mobile size  */}
                             {
                                 !isMobile && (
@@ -121,11 +122,11 @@ const Navbar = () => {
                                     </>
                                 ) 
                             }
-                        </a>
+                        </Link>
                     </li>
                     {/* Logout icon menu link */}
                     <li>
-                        <a to="/auth" className="menu_link flex items-center  justify-center  hover:bg-blue-100   px-3 py-2 custom-transition hover:opacity-90 rounded-2xl ">
+                        <Link to="/auth" className="menu_link flex items-center  justify-center  hover:bg-blue-100   px-3 py-2 custom-transition hover:opacity-90 rounded-2xl ">
                             {/* we changing content when mobile size  */}
                             {
                                 !isMobile && (
@@ -139,7 +140,7 @@ const Navbar = () => {
                                     </>
                                 ) 
                             }
-                        </a>
+                        </Link>
                     </li>
                 </ul>
 

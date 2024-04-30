@@ -43,6 +43,32 @@ export default function CommentDialog() {
                             </div>
                             <Separator className="my-2" />
                         </div>
+                        <div className="comment-card">
+                            <div>
+                                <div className='h-10 flex items-center'>
+                                    <Avatar>
+                                        <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                                        <AvatarFallback>CN</AvatarFallback>
+                                    </Avatar>
+                                    <p className='ml-2 font-medium text-sm'>Takeshwar janghel</p>
+                                </div>
+                                <p className='text-justify text-sm text-gray-700 '>this project is very good and using this technology is very deficalt to go so i think he is very knowledgebla</p>
+                            </div>
+                            <Separator className="my-2" />
+                        </div>
+                        <div className="comment-card">
+                            <div>
+                                <div className='h-10 flex items-center'>
+                                    <Avatar>
+                                        <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                                        <AvatarFallback>CN</AvatarFallback>
+                                    </Avatar>
+                                    <p className='ml-2 font-medium text-sm'>Takeshwar janghel</p>
+                                </div>
+                                <p className='text-justify text-sm text-gray-700 '>this project is very good and using this technology is very deficalt to go so i think he is very knowledgebla</p>
+                            </div>
+                            <Separator className="my-2" />
+                        </div>
                     </ScrollArea>
                     <div className='w-[100%] flex'>
                         <Input className='mr-1' placeholder='write here your comment' />

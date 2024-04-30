@@ -28,23 +28,25 @@ import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
 import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded';
 import FactCheckIcon from '@mui/icons-material/FactCheck';
 import CallMissedOutgoingIcon from '@mui/icons-material/CallMissedOutgoing';
+import { useNavigate,  } from 'react-router-dom';
 
 export default function Profile() {
+    const navigate=useNavigate();
     const cardsData = [
-        { project: "smart-canteen", tech: "react.js node.js express.js mongodb", desc: " this project allow to student can order online" },
-        { project: "smart-canteen", tech: "react.js node.js express.js mongodb", desc: " this project allow to student can order online" },
-        { project: "smart-canteen", tech: "react.js node.js express.js mongodb", desc: " this project allow to student can order online" },
-        { project: "smart-canteen", tech: "react.js node.js express.js mongodb", desc: " this project allow to student can order online" },
-        { project: "smart-canteen", tech: "react.js node.js express.js mongodb", desc: " this project allow to student can order online" },
-        { project: "smart-canteen", tech: "react.js node.js express.js mongodb", desc: " this project allow to student can order online" },
-        { project: "smart-canteen", tech: "react.js node.js express.js mongodb", desc: " this project allow to student can order online" },
-        { project: "smart-canteen", tech: "react.js node.js express.js mongodb", desc: " this project allow to student can order online" },
-        { project: "smart-canteen", tech: "react.js node.js express.js mongodb", desc: " this project allow to student can order online" },
-        { project: "smart-canteen", tech: "react.js node.js express.js mongodb", desc: " this project allow to student can order online" },
+        { project: "smart-canteen", tech: "react.js no...", desc: " this project..." },
+        { project: "smart-canteen", tech: "react.js no...", desc: " this project..." },
+        { project: "smart-canteen", tech: "react.js no...", desc: " this project..." },
+        { project: "smart-canteen", tech: "react.js no...", desc: " this project..." },
+        { project: "smart-canteen", tech: "react.js no...", desc: " this project..." },
+        { project: "smart-canteen", tech: "react.js no...", desc: " this project..." },
+        { project: "smart-canteen", tech: "react.js no...", desc: " this project..." },
+        { project: "smart-canteen", tech: "react.js no...", desc: " this project..." },
+        { project: "smart-canteen", tech: "react.js no...", desc: " this project..." },
+        { project: "smart-canteen", tech: "react.js no...", desc: " this project..." },
         // Add more card data as needed
     ];
     return (
-        <div className='bg-slate-200 w-full py-4 px-3 lg:py-6 lg:px-8'>
+        <div className=' w-full py-4 px-3 lg:py-6 lg:px-8'>
             {/* profile section  */}
             <div className='profile-section w-full flex flex-wrap justify-around '>
                 {/* image card */}
@@ -69,7 +71,7 @@ export default function Profile() {
                     </CardContent>
                     <CardFooter className="w-full  flex justify-between">
                         <Button className="w-1/2 mr-2 "><GroupAddIcon className="mr-2 h-4 w-4" />Connect</Button>
-                        <Button className="w-1/2 mr-2 "><MessageRoundedIcon className="mr-2 h-4 w-4" />Message</Button>
+                        <Button className="w-1/2 mr-2 " onClick={()=>navigate("/messages")} ><MessageRoundedIcon className="mr-2 h-4 w-4" />Message</Button>
                     </CardFooter>
                 </Card>
                 {/* social card */}
@@ -159,9 +161,9 @@ export default function Profile() {
                                 <h3 className="ml-1 text-sm text-gray-600 font-semibold lg:truncate" >{card.desc}</h3>
                             </div>
                             <div className='btn w-full flex justify-center'>
-                                <Button variant="link" >SEE</Button>
+                                <Button variant="link" onClick={()=>navigate("/projectcode")} >SEE</Button>
                             </div>
-                        </div>
+                        </div> 
                     ))}
                 </div>
             </div>
